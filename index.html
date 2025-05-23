@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>PL-600 Quiz App - Power Platform Solution Architect</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="app">
+            <!-- App content will be dynamically rendered here -->
+            <div class="loading-screen">
+                <h2>Loading Quiz App...</h2>
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Load JavaScript modules -->
+    <script src="js/utils.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Initialize the app when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            window.app = new QuizApp();
+        });
+    </script>
+</body>
+</html>
